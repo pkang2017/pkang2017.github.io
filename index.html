@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav class="left-nav">
+      <div class="selfie">
+        <p>TJ</p>
+      </div>
+      <ul class="bar-list">
+        <li><a href="./bio.html">Bio</a></li>
+        <!-- <li><a href="./index.html">About</a></li>-->
+        <li><a href="./index.html">Projects</a></li>
+        <li><a href="./CV_Peng.pdf">Resume</a></li>
+        <!-- <li onclick="location.href='./CV_Peng.pdf';">Resume</li>-->
+        <li><a href="./index.html">Contact</a>
+          <ul class="pulldown-menu">
+            <li>pengkang2022@u.northwestern.edu</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="project-list">
+      <h1>Projects</h1>
+      <ul>
+        <li><button onclick="showProject('project1')">Image matting</button>
+            <p id="project1">Image matting is a fundamental computer vision problem and has many applications. Previous image matting methods always focus on extracting a general object or portrait from the background in an image. In this paper, we try to solve the text matting problem, which extracts characters (usually WordArts) from the background in an image. Different from traditional image matting problems, text matting is much harder because of its foreground's three properties: smallness, multi-objectness, and complicated structures and boundaries. We propose a two-stage attentional text matting pipeline to solve the text matting problem. In the first stage, we utilize text detection methods to serve as the attention mechanism. In the second stage, we employ the attentional text regions and matting system to obtain mattes of these text regions. Finally, we post-process the mattes and obtain the final matte of the input image. We also construct a very large dataset with high-quality annotations consisting of 46,289 unique foregrounds to facilitate the learning and evaluation of text matting. Extensive experiments on this dataset and real images clearly demonstrate the superiority of our proposed pipeline over previous image matting methods on the task of text matting.</p>
+        </li>
+        <li><button onclick="showProject('project2')">Recommendation systems</button>
+            <p id="project2">The rapid growth of Internet services and mobile devices provides
+              an excellent opportunity to satisfy the strong demand for the personalized item or product recommendation. However, with the
+              tremendous increase of users and items, personalized recommender
+              systems still face several challenging problems: (1) the hardness of
+              exploiting sparse implicit feedback; (2) the difficulty of combining
+              heterogeneous data. To cope with these challenges, we propose
+              a gated attentive-autoencoder (GATE) model, which is capable of
+              learning fused hidden representations of items’ contents and binary ratings, through a neural gating structure. Based on the fused
+              representations, our model exploits neighboring relations between
+              items to help infer users’ preferences. In particular, a word-level
+              and a neighbor-level attention module are integrated with the autoencoder. The word-level attention learns the item hidden representations from items’ word sequences, while favoring informative
+              words by assigning larger attention weights. The neighbor-level attention learns the hidden representation of an item’s neighborhood
+              by considering its neighbors in a weighted manner. We extensively
+              evaluate our model with several state-of-the-art methods and different validation metrics on four real-world datasets. The experimental
+              results not only demonstrate the effectiveness of our model on topN recommendation but also provide interpretable results attributed
+              to the attention modules.</p>
+        </li> 
+      </ul>
+    </div>
+  <script src="main.js"></script>
+  </body>
+</html>
